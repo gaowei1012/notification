@@ -9,14 +9,6 @@ const Detail = () => {
   return (
     <SafeAreaView>
       <Text>detail</Text>
-      <Button title='show toast' onPress={() => {
-        RootToast.showToast('show toast')
-      }} />
-      {/* <Modal isVisible={true}>
-        <View style={{flex: 1}}>
-          <Text>hello modal</Text>
-        </View>
-      </Modal> */}
     </SafeAreaView>
   )
 }

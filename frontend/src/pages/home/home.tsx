@@ -11,7 +11,6 @@ const Home = (props: any) => {
     <SafeAreaView>
       <View>
         <Text>首页</Text>
-        <Button buttonStyle={{ width: 120, alignSelf: 'center' }} onPress={() => NavigatorUtils.navigator(props.navigation, 'detail')} type='clear' title="home detail" />
       </View>
     </SafeAreaView>
   )
