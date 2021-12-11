@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { HomeScreen, DiscoverScreen } from './screen'
+import { HomeScreen, SettingScreen } from './screen'
 import TabBarItem from './TabBarItem'
 
 const Tab = createBottomTabNavigator()
@@ -21,7 +21,7 @@ const RootNavigatorBottom = () => {
       headerShown: false,
     })}>
     <Tab.Screen name="home" component={HomeScreen} options={{ tabBarBadge: 3, tabBarLabel: '首页' }} />
-    <Tab.Screen name='discover' component={DiscoverScreen} options={{ tabBarLabel: '发现' }} />
+    <Tab.Screen name='discover' component={SettingScreen} options={{ tabBarLabel: '设置' }} />
   </Tab.Navigator>
 }
 

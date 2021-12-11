@@ -1,4 +1,4 @@
-import { HomeScreen } from './homeScreen'
-import { DiscoverScreen } from './discoverScreen'
+import HomeScreen from './homeScreen'
+import SettingScreen from './settingScreen'
 
-export { HomeScreen, DiscoverScreen }
+export { HomeScreen, SettingScreen }
