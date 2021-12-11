@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { Settings } from '../../pages/setting'
+import Settings from '../../pages/setting/setting'
 
 const Stack = createNativeStackNavigator()
 

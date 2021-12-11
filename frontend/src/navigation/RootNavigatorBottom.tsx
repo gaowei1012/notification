@@ -12,8 +12,8 @@ const RootNavigatorBottom = () => {
       tabBarIcon: ({ focused, color, size }) => {
         if (route.name === 'home') {
           return <TabBarItem focused={focused} normalIcon={require('../assets/tab/home.png')} selectIcon={require('../assets/tab/ac_home.png')} />
-        } else if (route.name === 'discover') {
-          return <TabBarItem focused={focused} normalIcon={require('../assets/tab/discovery.png')} selectIcon={require('../assets/tab/ac_discovery.png')} />
+        } else if (route.name === 'setting') {
+          return <TabBarItem focused={focused} normalIcon={require('../assets/tab/dynamic.png')} selectIcon={require('../assets/tab/ac_dynamic.png')} />
         }
       },
       tabBarActiveTintColor: 'tomato',
@@ -21,7 +21,7 @@ const RootNavigatorBottom = () => {
       headerShown: false,
     })}>
     <Tab.Screen name="home" component={HomeScreen} options={{ tabBarBadge: 3, tabBarLabel: '首页' }} />
-    <Tab.Screen name='discover' component={SettingScreen} options={{ tabBarLabel: '设置' }} />
+    <Tab.Screen name='setting' component={SettingScreen} options={{ tabBarLabel: '设置' }} />
   </Tab.Navigator>
 }
 
