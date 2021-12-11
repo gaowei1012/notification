@@ -4,7 +4,9 @@ import { commomStyles } from './common'
 const { flexRowOrCentent } = commomStyles
 
 const styles = StyleSheet.create({
-  flexRowOrCentent
+  container: {
+    ...flexRowOrCentent
+  }
 })
 
 export { styles }
