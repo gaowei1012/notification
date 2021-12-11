@@ -10,7 +10,7 @@ const Regsiter = () => {
 
   return (
     <SafeAreaView style={styles.registerCotainer}>
-      <TopNavigationBar statusBar={{ backgroundColor: '#fff', barStyle: 'dark-content' }} style={{ backgroundColor: '#ffffff' }} />
+      <TopNavigationBar title='注册' />
       <View style={styles.titleBox}>
         <Text style={styles.title}>输入手机号码</Text>
         <View style={styles.terms}>

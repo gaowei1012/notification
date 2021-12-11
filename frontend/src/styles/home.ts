@@ -1,11 +1,18 @@
 import { StyleSheet } from 'react-native'
 import { commomStyles } from './common'
+import { px2dp } from '../utils'
 
-const { flexRowOrCentent } = commomStyles
+const { defaultBackgroundColor, flex, defaultSytle  } = commomStyles
 
 const styles = StyleSheet.create({
   container: {
-    ...flexRowOrCentent
+    ...flex,
+    ...defaultSytle,
+    ...defaultBackgroundColor
+  },
+  plus: {
+    width: px2dp(24),
+    height: px2dp(24)
   }
 })
 

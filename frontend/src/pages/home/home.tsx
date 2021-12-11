@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
-import { View, SafeAreaView, Text } from 'react-native'
+import { View, SafeAreaView, Text, Image, TouchableOpacity } from 'react-native'
 import PushNotificationIOS from '@react-native-community/push-notification-ios'
-import { Button } from 'react-native-elements'
+import { Button, Card, Icon } from 'react-native-elements'
+import { TopNavigationBar } from '../../utils'
+import { styles } from '../../styles/home'
 
 const Home = (props: any) => {
 
@@ -27,10 +29,14 @@ const Home = (props: any) => {
   }
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
+      <TopNavigationBar title='TODO' rightButton={<TouchableOpacity>
+        <Image style={styles.plus} resizeMode='cover' source={require('../../assets/icon/plus.png')} />
+      </TouchableOpacity>} />
       <View>
-        <Text>首页</Text>
-        <Button title='推送测试' type='solid' onPress={notification} />
+        <Card children={<View>
+          <Text>children</Text>
+        </View>} />
       </View>
     </SafeAreaView>
   )

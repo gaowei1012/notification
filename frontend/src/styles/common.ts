@@ -1,6 +1,11 @@
 import { StyleSheet } from 'react-native'
+import { height, width } from '../utils'
+import baseColor from './baseColor'
 
 const commomStyles = StyleSheet.create({ 
+  flex: {
+    flex: 1,
+  },
   flexRowOrCentent: {
     flexDirection: 'row',
     alignContent: 'center',
@@ -10,6 +15,13 @@ const commomStyles = StyleSheet.create({
     flexDirection: 'column',
     alignContent: 'center',
     justifyContent: 'center' 
+  },
+  defaultSytle: {
+    width: width,
+    height: height
+  },
+  defaultBackgroundColor: {
+    backgroundColor: baseColor.defaultColor
   }
 })
 

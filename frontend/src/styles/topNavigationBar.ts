@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   container: {
-    backgroundColor: '#85DFD2', // 设置背景颜色
+    backgroundColor: '#fff', // 设置背景颜色
   },
   title: {
     width: px2dp(200),

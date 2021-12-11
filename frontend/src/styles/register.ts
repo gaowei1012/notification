@@ -1,18 +1,21 @@
 import { StyleSheet } from 'react-native'
+import { commomStyles } from './common'
+import baseColor from './baseColor'
 import { px2dp } from '../utils'
 
-
+const { defaultBackgroundColor, flex, } = commomStyles
 const styles = StyleSheet.create({
   registerCotainer: {
-    flex: 1,
-    backgroundColor: '#fff'
+    ...flex,
+    ...defaultBackgroundColor
   },
   titleBox: {
     marginLeft: px2dp(28),
+    marginTop: px2dp(16)
   },
   title: {
     fontSize: px2dp(28),
-    color: '#000',
+    color: baseColor.dfontColor,
   },
   terms: {
     flexDirection: 'row',
@@ -39,14 +42,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingLeft: px2dp(6),
     justifyContent: 'space-between',
-    borderRadius: px2dp(3),
+    borderRadius: px2dp(3)
   },
   sendCode: {
     width: px2dp(80),
     height: px2dp(25),
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: px2dp(20),
+    borderRadius: px2dp(20)
   },
   sendText: {
     color: '#fff',
@@ -60,7 +63,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     justifyContent: 'center',
     backgroundColor: '#C2C7CC',
-    borderRadius: px2dp(3),
+    borderRadius: px2dp(3)
   },
   activeSubmitBox: {
     backgroundColor: 'rgba(77, 171, 109, 0.99)',

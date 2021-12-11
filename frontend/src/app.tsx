@@ -18,10 +18,10 @@ const App = () => {
       completion();
     });
   }, [])
-  
+
   return <StoreProvider>
-    <DynamicTabNavigator />
-  </StoreProvider>
+  <DynamicTabNavigator />
+</StoreProvider>
 }
 
 export default App
