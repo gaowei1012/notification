@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { HomeScreen, DiscoverScreen } from './screen'
 import TabBarItem from './TabBarItem'
