@@ -58,3 +58,5 @@ buck-out/
 
 # CocoaPods
 frontend/ios/Pods/
+
+frontend/node_modules/*
