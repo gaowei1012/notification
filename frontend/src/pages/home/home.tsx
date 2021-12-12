@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { View, SafeAreaView, Text, Image, TouchableOpacity } from 'react-native'
 import PushNotificationIOS from '@react-native-community/push-notification-ios'
-import { Button, Card, Icon } from 'react-native-elements'
+import { Button, Card } from 'react-native-elements'
 import { TopNavigationBar } from '../../utils'
 import { styles } from '../../styles/home'
 

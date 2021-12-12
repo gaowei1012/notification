@@ -20,6 +20,7 @@
     "@types/react-test-renderer": "^17.0.1",
     "axios": "^0.24.0",
     "lodash": "^4.17.21",
+    "metro-config": "^0.66.2",
     "mobx": "^6.3.8",
     "mobx-react-lite": "^3.2.2",
     "react": "17.0.2",
@@ -33,6 +34,7 @@
     "react-native-root-toast": "^3.3.0",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.9.0",
+    "react-native-svg-transformer": "^0.14.3",
     "react-native-vector-icons": "^9.0.0",
     "react-navigation-tabs": "^2.11.1"
   },
