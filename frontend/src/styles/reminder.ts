@@ -45,6 +45,17 @@ const styles = StyleSheet.create({
     width: px2dp(350),
     alignSelf: 'center',
     marginTop: px2dp(120)
+  },
+  dateSelect: {
+    width: px2dp(346),
+    alignSelf: 'center',
+    marginTop:px2dp(12),
+    borderBottomWidth: px2dp(1),
+    borderBottomColor: '#ddd',
+    padding: px2dp(8)
+  },
+  dateText: {
+    color: '#8d96a0'
   }
 })
 
