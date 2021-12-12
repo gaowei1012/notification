@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import DynamicTabNavigator from './navigation/DynamicTabNavigator'
-import { StoreProvider } from './hooks/useStore'
 import { Notification, Notifications } from 'react-native-notifications'
+import { StoreProvider } from './hooks/useStore'
 
 const App = () => {
   // 注册推送器
@@ -20,8 +20,8 @@ const App = () => {
   }, [])
 
   return <StoreProvider>
-  <DynamicTabNavigator />
-</StoreProvider>
+    <DynamicTabNavigator />
+  </StoreProvider>
 }
 
 export default App
