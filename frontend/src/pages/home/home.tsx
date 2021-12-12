@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { View, SafeAreaView, Text, Image, TouchableOpacity } from 'react-native'
 // import PushNotificationIOS from '@react-native-community/push-notification-ios'
-import CustomizeCalendar  from '../../components/calendar'
+import CustomizeCalendar from '../../components/calendar'
 import { Button, Card } from 'react-native-elements'
 import { TopNavigationBar } from '../../utils'
 import { styles } from '../../styles/home'
@@ -32,10 +32,13 @@ const Home = (props: any) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <TopNavigationBar title='TODO' rightButton={<TouchableOpacity>
+      <TopNavigationBar title='TODO' rightButton={<TouchableOpacity activeOpacity={.8}>
         <Image style={styles.plus} resizeMode='cover' source={require('../../assets/icon/plus.png')} />
       </TouchableOpacity>} />
-      <CustomizeCalendar />
+      <View style={styles.content}>
+        <Image style={styles.bare} source={require('../../assets/icon/bare.png')} />
+      </View>
+      {/* <CustomizeCalendar /> */}
     </SafeAreaView>
   )
 }

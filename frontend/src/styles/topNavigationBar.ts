@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native'
-import { nav_bar_h} from '../config/statusBarHeight'
+import { nav_bar_h } from '../config/statusBarHeight'
 import { px2dp } from '../utils'
 
 const styles = StyleSheet.create({
   navBar: {
-   flexDirection: 'row',
-   alignItems: 'center',
-   justifyContent: 'space-around',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
     height: nav_bar_h, // 根据平台设置高度
     paddingHorizontal: px2dp(15),
   },
@@ -31,14 +31,14 @@ const styles = StyleSheet.create({
   leftBtnBox: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent:'flex-start',
+    justifyContent: 'flex-start',
     width: px2dp(50),
     // height: NAV_BAR_H, // 根据平台设置高度
   },
   rightBtnBox: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent:'flex-end',
+    justifyContent: 'flex-end',
     width: px2dp(60),
   },
 });

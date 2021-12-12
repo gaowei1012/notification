@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { height, width } from '../utils'
+import { height, px2dp, width } from '../utils'
 import baseColor from './baseColor'
 
 const commomStyles = StyleSheet.create({ 
@@ -22,6 +22,10 @@ const commomStyles = StyleSheet.create({
   },
   defaultBackgroundColor: {
     backgroundColor: baseColor.defaultColor
+  },
+  defaultFontStyle: {
+    fontSize: baseColor.dfontSize,
+    color: baseColor.dfontColor,
   }
 })
 

@@ -13,6 +13,14 @@ const styles = StyleSheet.create({
   plus: {
     width: px2dp(24),
     height: px2dp(24)
+  },
+  content: {
+    alignItems: 'center',
+    marginTop: px2dp(100)
+  },
+  bare: {
+    width: px2dp(320),
+    height: px2dp(260)
   }
 })
 
