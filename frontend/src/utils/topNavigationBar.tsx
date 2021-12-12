@@ -2,30 +2,9 @@
 import React from 'react'
 import { styles } from '../styles/topNavigationBar'
 import { View, Text, StatusBar } from 'react-native'
+import { topNavigationBarType } from '../types/topNavigationBarType'
 
-
-type StatusBarShapeType = {
-  barStyle?: any | 'light-content' | 'default'
-  hiddle?: boolean
-  backgroundColor?: string
-}
-
-type topNavigationBarType = {
-  style?: any
-  title?: string
-  titleView?: React.ReactElement
-  titleLayoutStyle?: any
-  statusBar?: StatusBarShapeType
-  rightButton?: React.ReactElement
-  leftButton?: React.ReactElement
-  translucent?: boolean
-  color?: string
-  fontSize?: number
-  animated?: boolean
-  hide?: boolean
-}
-
-const TopNavigationBar = (props: topNavigationBarType) => {
+const TopNavigationBar: React.FC<topNavigationBarType> = (props) => {
   const { style, statusBar, rightButton, titleLayoutStyle, leftButton, hide, titleView, color, fontSize, title } = props
   const getButtonElement = (ele: any) => {
     return <View style={styles.navBarButton}>{ele ? ele : null}</View>;
