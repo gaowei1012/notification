@@ -3,7 +3,7 @@ import { View, SafeAreaView, Text, Image, TouchableOpacity } from 'react-native'
 // import PushNotificationIOS from '@react-native-community/push-notification-ios'
 import CustomizeCalendar from '../../components/calendar'
 import { Button, Card } from 'react-native-elements'
-import { TopNavigationBar } from '../../utils'
+import { TopNavigationBar, navigate } from '../../utils'
 import { styles } from '../../styles/home'
 
 
@@ -32,7 +32,7 @@ const Home = (props: any) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <TopNavigationBar title='TODO' rightButton={<TouchableOpacity activeOpacity={.8}>
+      <TopNavigationBar title='TODO' rightButton={<TouchableOpacity onPress={() => navigate('reminder')} activeOpacity={.8}>
         <Image style={styles.plus} resizeMode='cover' source={require('../../assets/icon/plus.png')} />
       </TouchableOpacity>} />
       <View style={styles.content}>

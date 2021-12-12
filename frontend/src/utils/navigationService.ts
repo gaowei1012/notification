@@ -32,8 +32,8 @@ const replace = (routeName: any, params = {}) => {
   navigator.dispatch(StackActions.replace(routeName, params))
 }
 
-const goBack = () => {
+const back = () => {
   navigator.dispatch(CommonActions.goBack());
 }
 
-export { setToLeveNavigator, replace, reset, goBack, navigate }
+export { setToLeveNavigator, replace, reset, back, navigate }

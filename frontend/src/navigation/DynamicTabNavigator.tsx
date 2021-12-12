@@ -8,6 +8,7 @@ import * as React from 'react'
 
 import { RootNavigatorBottom } from './RootNavigatorBottom'
 // Stack
+import Reminder from '../pages/home/reminder'
 import { Login, Register } from '../pages/user'
 
 const Stack = createNativeStackNavigator()
@@ -23,6 +24,7 @@ export default function DynamicTabNavigator() {
         <Stack.Screen name='root' component={RootNavigatorBottom} />
         <Stack.Screen name='login' component={Login} />
         <Stack.Screen name='register' component={Register} />
+        <Stack.Screen name='reminder' component={Reminder} />
       </Stack.Navigator>
     </NavigationContainer>
   )
