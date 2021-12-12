@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { styles } from '../../../styles/register'
 import { TopNavigationBar } from '../../../utils'
 import { View, Text, SafeAreaView, TouchableOpacity, TextInput } from 'react-native'
+import { IRegisterProps } from '../../../types/users'
 
-const Regsiter = () => {
+const Regsiter: React.FC<IRegisterProps> = () => {
   const [isFocus, setIsFocus] = useState<boolean>(false);
   const [count, setCount] = useState<number>(0);
   const [disabled, setDisabled] = useState<boolean>(false);

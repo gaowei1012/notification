@@ -1,9 +1,10 @@
-import * as React from 'react'
+import React from 'react'
 import { View, Text, SafeAreaView, TextInput, TouchableOpacity, Platform, TouchableNativeFeedback } from 'react-native'
 import { px2dp, NavigatorUtils, TopNavigationBar } from '../../../utils'
+import { ILoginProps } from '../../../types/users'
 import { styles } from '../../../styles/login'
 
-const Login = (props: any) => {
+const Login: React.FC<ILoginProps> = (props) => {
   const _onBlurName = () => { }
   const onChangeMobile = (val: any) => { }
   const onChangePassword = (val: any) => { }
