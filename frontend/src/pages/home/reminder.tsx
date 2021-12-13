@@ -12,6 +12,20 @@ const Reminder: React.FC<IReminderProps> = () => {
   const [date, setDate] = useState(new Date())
   const [open, setOpen] = useState<boolean>(false)
   const [start_date, setStartDate] = useState<any>('请选择提醒时间')
+  const [orgData, setOrgData] = useState<any>({ title: '', content: '', start_date: '' })
+
+  const handleChangeReminder = (val: string, key: string) => {
+    orgData[key] = val
+    setOrgData(orgData)
+  }
+
+  const handleChangeSelectedDate = (date: any, key: string) => {
+    setOpen(false)
+    setDate(date)
+    orgData[key] = moment(date).format('YYYY-MM-DD HH:MM:SS')
+    setOrgData(orgData)
+    setStartDate(moment(date).format('YYYY-MM-DD HH:MM:SS'))
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -21,6 +35,7 @@ const Reminder: React.FC<IReminderProps> = () => {
         <TextInput
           style={styles.textInput}
           placeholder='请输入事项标题'
+          onChangeText={(val: string) => handleChangeReminder(val, 'title')}
         />
       </View>
       <View style={styles.inputContainer}>
@@ -29,6 +44,7 @@ const Reminder: React.FC<IReminderProps> = () => {
           style={styles.multilineTextInput}
           placeholder='请输入事项内容'
           multiline={true}
+          onChangeText={(val: string) => handleChangeReminder(val, 'content')}
         />
       </View>
       <View style={styles.inputContainer}>
@@ -42,17 +58,16 @@ const Reminder: React.FC<IReminderProps> = () => {
           open={open}
           date={date}
           locale={'zh_cn'}
-          onConfirm={(date) => {
-            setOpen(false)
-            setDate(date)
-            setStartDate(moment(date).format('YYYY-MM-DD HH:MM:SS'))
-          }}
+          onConfirm={(date) => handleChangeSelectedDate(date, 'start_date')}
           onCancel={() => {
             setOpen(false)
           }}
         />
       </View>
-      <Button activeOpacity={.8} onPress={() => back()} style={styles.confirm} title='添加' />
+      <Button activeOpacity={.8} onPress={() => {
+        // back()
+        console.log('orgData=>', orgData)
+      }} style={styles.confirm} title='添加' />
     </SafeAreaView>
   )
 }
