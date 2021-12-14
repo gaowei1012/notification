@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { HomeScreen, SettingScreen } from './screen'
 import TabBarItem from './TabBarItem'
@@ -6,7 +6,7 @@ import TabBarItem from './TabBarItem'
 const Tab = createBottomTabNavigator()
 
 
-const RootNavigatorBottom = () => {
+const RootNavigatorBottom: React.FC<{}> = () => {
   return <Tab.Navigator
     screenOptions={({ route }) => ({
       tabBarIcon: ({ focused, color, size }) => {
