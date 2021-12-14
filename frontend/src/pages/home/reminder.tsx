@@ -35,16 +35,8 @@ const Reminder: React.FC<IReminderProps> = (props) => {
         <TextInput
           style={styles.textInput}
           placeholder='请输入事项标题'
+          returnKeyType='next'
           onChangeText={(val: string) => handleChangeReminder(val, 'title')}
-        />
-      </View>
-      <View style={styles.inputContainer}>
-        <Text style={styles.contentTitle}>提醒内容:</Text>
-        <TextInput
-          style={styles.multilineTextInput}
-          placeholder='请输入事项内容'
-          multiline={true}
-          onChangeText={(val: string) => handleChangeReminder(val, 'content')}
         />
       </View>
       <View style={styles.inputContainer}>
@@ -62,6 +54,17 @@ const Reminder: React.FC<IReminderProps> = (props) => {
           onCancel={() => {
             setOpen(false)
           }}
+        />
+      </View>
+      <View style={styles.inputContainer}>
+        <Text style={styles.contentTitle}>提醒内容:</Text>
+        <TextInput
+          style={styles.multilineTextInput}
+          placeholder='请输入事项内容'
+          multiline={true}
+          returnKeyType='done'
+          blurOnSubmit={true}
+          onChangeText={(val: string) => handleChangeReminder(val, 'content')}
         />
       </View>
       <Button activeOpacity={.8} onPress={() => {
