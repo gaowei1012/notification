@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { View, SafeAreaView, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 // import PushNotificationIOS from '@react-native-community/push-notification-ios'
 import CustomizeCalendar from '../../components/calendar'
 import { Button, Card } from 'react-native-elements'
