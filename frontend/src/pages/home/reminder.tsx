@@ -8,7 +8,7 @@ import { styles } from '../../styles/reminder'
 import GoBack from '../../navigation/GoBack'
 import moment from 'moment'
 
-const Reminder: React.FC<IReminderProps> = () => {
+const Reminder: React.FC<IReminderProps> = (props) => {
   const [date, setDate] = useState(new Date())
   const [open, setOpen] = useState<boolean>(false)
   const [start_date, setStartDate] = useState<any>('请选择提醒时间')
