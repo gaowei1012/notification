@@ -17,7 +17,7 @@ const Login: React.FC<ILoginProps> = (props) => {
         <View style={styles.textInputBox}>
           <TextInput
             style={styles.textInputStyle}
-            placeholder={'请输入手用户名'}
+            placeholder={'请输入用户名'}
             onChangeText={(val) => onChangeMobile(val)}
             placeholderTextColor={'#ccc'}
             // onFocus={this.handleFocus}

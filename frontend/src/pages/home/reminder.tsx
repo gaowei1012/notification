@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { View, SafeAreaView, Text, TextInput, TouchableOpacity } from 'react-native'
 import { IReminderProps } from '../../types/reminder'
-import { TopNavigationBar } from '../../utils'
+import { TopNavigationBar, back } from '../../utils'
 import DatePicker from 'react-native-date-picker'
 import { Button } from 'react-native-elements'
 import { styles } from '../../styles/reminder'
@@ -65,7 +65,7 @@ const Reminder: React.FC<IReminderProps> = (props) => {
         />
       </View>
       <Button activeOpacity={.8} onPress={() => {
-        // back()
+        back()
         console.log('orgData=>', orgData)
       }} style={styles.confirm} title='添加' />
     </SafeAreaView>

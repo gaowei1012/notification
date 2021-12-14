@@ -30,11 +30,15 @@ const Home = (props: any) => {
   //   }
   // }
 
+  const rightButton = () => (
+    <TouchableOpacity onPress={() => navigate('reminder')} activeOpacity={.8}>
+      <Image style={styles.plus} resizeMode='cover' source={require('../../assets/icon/plus.png')} />
+    </TouchableOpacity>
+  )
+
   return (
     <SafeAreaView style={styles.container}>
-      <TopNavigationBar title='TODO' rightButton={<TouchableOpacity onPress={() => navigate('reminder')} activeOpacity={.8}>
-        <Image style={styles.plus} resizeMode='cover' source={require('../../assets/icon/plus.png')} />
-      </TouchableOpacity>} />
+      <TopNavigationBar title='TODO' rightButton={rightButton()} />
       <View style={styles.content}>
         <Image style={styles.bare} source={require('../../assets/icon/bare.png')} />
       </View>
