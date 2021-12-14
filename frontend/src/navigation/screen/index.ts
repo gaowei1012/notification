@@ -1,4 +1,4 @@
 import HomeScreen from './homeScreen'
-import SettingScreen from './settingScreen'
+import ProfileScreen from './profileScreen'
 
-export { HomeScreen, SettingScreen }
+export { HomeScreen, ProfileScreen }
