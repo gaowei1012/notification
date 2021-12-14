@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { View, SafeAreaView, Text, TextInput, TouchableOpacity } from 'react-native'
 import { IReminderProps } from '../../types/reminder'
-import { back, TopNavigationBar } from '../../utils'
+import { TopNavigationBar } from '../../utils'
 import DatePicker from 'react-native-date-picker'
 import { Button } from 'react-native-elements'
 import { styles } from '../../styles/reminder'
