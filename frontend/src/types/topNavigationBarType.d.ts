@@ -1,6 +1,6 @@
 
 
-type StatusBarShapeType = {
+interface StatusBarShapeType {
   barStyle?: any | 'light-content' | 'default'
   hiddle?: boolean
   backgroundColor?: string
