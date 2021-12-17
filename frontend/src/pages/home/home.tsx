@@ -1,14 +1,13 @@
-import React, { useEffect } from 'react'
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import React from 'react'
+import { View, Image, TouchableOpacity } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 // import PushNotificationIOS from '@react-native-community/push-notification-ios'
 import CustomizeCalendar from '../../components/calendar'
-import { Button, Card } from 'react-native-elements'
 import { TopNavigationBar, navigate } from '../../utils'
 import { styles } from '../../styles/home'
 
 
-const Home = (props: any) => {
+const Home: React.FC<{}> = (props) => {
 
   // useEffect(() => {
   //   const type = 'notification';

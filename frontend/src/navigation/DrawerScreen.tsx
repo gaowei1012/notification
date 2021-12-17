@@ -1,23 +1,34 @@
 import React from 'react'
-import { View, Button } from 'react-native'
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { HomeScreen } from './screen';
+import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
+import { HomeScreen } from './screen'
 
 const Drawer = createDrawerNavigator()
 
-const DrawerScreen: React.FC<{}> = () => {
-  return <Drawer.Navigator initialRouteName='home'>
+const DrawerScreen: React.FC<any> = (props) => {
+  return <Drawer.Navigator 
+    initialRouteName='home'
+    screenOptions={{
+      headerShown: false
+    }}
+    drawerContent={(props) => <CustomDrawerContent {...props} />}
+    >
      <Drawer.Screen name="home" component={HomeScreen} />
-     <Drawer.Screen name="ntification" component={NotificationsScreen} />
   </Drawer.Navigator>
 }
 
 export default DrawerScreen
 
-function NotificationsScreen(navigation: any) {
+function CustomDrawerContent(props: any) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button onPress={() => navigation.goBack()} title="Go back home" />
-    </View>
+    <DrawerContentScrollView {...props}>
+      <DrawerItem
+        label="Close drawer"
+        onPress={() => props.navigation.closeDrawer()}
+      />
+      <DrawerItem
+        label="Toggle drawer"
+        onPress={() => props.navigation.toggleDrawer()}
+      />
+    </DrawerContentScrollView>
   );
 }
