@@ -20,7 +20,7 @@ const RootNavigatorBottom: React.FC<{}> = () => {
       tabBarInactiveTintColor: 'gray',
       headerShown: false,
     })}>
-    <Tab.Screen name="home" component={HomeScreen} options={{ tabBarLabel: '首页' }} />
+    <Tab.Screen name="home" component={HomeScreen} options={{ tabBarBadge: 3, tabBarLabel: '首页' }} />
     <Tab.Screen name='profile' component={ProfileScreen} options={{ tabBarLabel: '我的' }} />
   </Tab.Navigator>
 }
