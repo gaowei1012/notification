@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "outDir": "./build",
+      "target": "es6",
+      "lib": [
+          "dom",
+          "dom.iterable",
+          "es2015.promise",
+          "esnext"
+      ],
+      "allowJs": true,
+      "esModuleInterop": true,
+      "jsx": "preserve",
+      "strict": false,
+      "strictNullChecks": false,
+      "strictPropertyInitialization": false,
+      "strictFunctionTypes": false,
+      "strictBindCallApply": true,
+      "noImplicitThis": true,
+      "moduleResolution": "node",
+      "module": "commonjs",
+      // "rootDir": ".",
+      "baseUrl": ".",
+      "paths": {
+          "@/*": [
+              "src/*"
+          ]
+      }
+  },
+  "include": [
+      "./vendor-types/**/*",
+      "./src/**/*"
+, "schedule_task"    ]
+}
