@@ -1,5 +1,15 @@
 import { errorCode } from "@/config"
 
+// 生成主键id(三位随机数+当前时间戳)
+export function getGuid() {
+  var length = 3
+  var num = ''
+  for (var i = 0; i < length; i++) {
+    num += Math.floor(Math.random() * 10)
+  }
+  return num + new Date().getTime()
+}
+
 // 获取n的随机数
 export function getRandom(n) {
   var num = ''
