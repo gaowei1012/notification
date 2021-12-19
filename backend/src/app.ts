@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser'
 import logger from 'morgan'
 import cors from 'cors'
 import session from 'express-session'
+import setRoutes from '@/routes/registerRouter'
 
 const app: express.Application = express()
 
@@ -33,6 +34,7 @@ app.use(
 
 try {
   // 注册路由
+  setRoutes(app)
 } catch(e) {
   console.log(e)
 }
