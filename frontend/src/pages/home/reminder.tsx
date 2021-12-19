@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, SafeAreaView, Text, TextInput, TouchableOpacity } from 'react-native'
+import { View, SafeAreaView, Text, TextInput, TouchableOpacity, DeviceEventEmitter } from 'react-native'
 import { IReminderProps } from '../../types/reminder'
 import { TopNavigationBar, back } from '../../utils'
 import DatePicker from 'react-native-date-picker'
@@ -67,9 +67,9 @@ const Reminder: React.FC<IReminderProps> = (props) => {
           onChangeText={(val: string) => handleChangeReminder(val, 'content')}
         />
       </View>
-      <Button activeOpacity={.8} onPress={() => {
+      <Button activeOpacity={.8} onPress={async () => {
         back()
-        console.log('orgData=>', orgData)
+        DeviceEventEmitter.emit('back', orgData)
       }} style={styles.confirm} title='添加' />
     </SafeAreaView>
   )
