@@ -10,9 +10,10 @@
     "noEmit": true,
     "strict": true,
     "target": "esnext",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
-          "src/*"
+        "src/*"
       ]
     }
   },
