@@ -4,6 +4,7 @@ import RootToast from './toast'
 import { setToLeveNavigator, navigate, back } from './navigationService'
 import TopNavigationBar from './topNavigationBar'
 import { getPlatform } from './platform'
+import storage from './storage'
 
 export {
   height,
@@ -15,5 +16,6 @@ export {
   TopNavigationBar,
   navigate,
   back,
-  getPlatform
+  getPlatform,
+  storage,
 }
