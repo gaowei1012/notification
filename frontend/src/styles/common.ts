@@ -6,10 +6,15 @@ const commomStyles = StyleSheet.create({
   flex: {
     flex: 1,
   },
+  flexRowOrBetween: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    alignSelf: 'center'
+  },
   flexRowOrCentent: {
     flexDirection: 'row',
-    alignContent: 'center',
-    justifyContent: 'center' 
+    alignItems: 'center'
   },
   flexColumnCentent: {
     flexDirection: 'column',
