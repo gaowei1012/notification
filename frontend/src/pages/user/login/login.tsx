@@ -12,7 +12,7 @@ const Login: React.FC<ILoginProps> = (props) => {
   const goRetrievePass = () => { }
   return (
     <SafeAreaView style={styles.loginContainer}>
-      <TopNavigationBar title='登录' statusBar={{ backgroundColor: '#fff', barStyle: 'dark-content' }} style={{ backgroundColor: '#ffffff' }} />
+      <TopNavigationBar title='登录' />
       <View style={{ marginTop: px2dp(120) }}>
         <View style={styles.textInputBox}>
           <TextInput

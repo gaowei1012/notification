@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { styles } from '../../../styles/register'
 import { TopNavigationBar } from '../../../utils'
-import { View, Text, SafeAreaView, TouchableOpacity, TextInput } from 'react-native'
 import { IRegisterProps } from '../../../types/users'
+import { View, Text, SafeAreaView, TouchableOpacity, TextInput } from 'react-native'
 
 const Regsiter: React.FC<IRegisterProps> = () => {
   const [isFocus, setIsFocus] = useState<boolean>(false);
