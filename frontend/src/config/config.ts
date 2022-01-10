@@ -1,5 +1,5 @@
 const config = {
-  statusBar: { backgroundColor: '#fff', barStyle: 'dark-content' }
-}
+  statusBar: { backgroundColor: '#fff', barStyle: 'dark-content' },
+};
 
-export default config
+export default config;

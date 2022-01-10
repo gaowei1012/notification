@@ -1,7 +1,8 @@
-const { getDefaultConfig } = require('metro-config')
+/* eslint-disable prettier/prettier */
+const { getDefaultConfig } = require('metro-config');
 
 module.exports = (async () => {
-  const { resolver: { sourceExts, assetExts } } = await getDefaultConfig()
+  const { resolver: { sourceExts, assetExts } } = await getDefaultConfig();
 
   return {
     transformer: {
@@ -9,7 +10,7 @@ module.exports = (async () => {
     },
     resolver: {
       assetExts: assetExts.filter(ext => ext !== 'svg'),
-      sourceExts: [...sourceExts, 'svg']
-    }
-  }
-})
+      sourceExts: [...sourceExts, 'svg'],
+    },
+  };
+});

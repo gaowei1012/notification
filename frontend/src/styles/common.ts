@@ -1,8 +1,8 @@
-import { StyleSheet } from 'react-native'
-import { height, px2dp, width } from '../utils'
-import baseColor from './baseColor'
+import { StyleSheet } from 'react-native';
+import { height, width } from '../utils';
+import baseColor from './baseColor';
 
-const commomStyles = StyleSheet.create({ 
+const commomStyles = StyleSheet.create({
   flex: {
     flex: 1,
   },
@@ -10,28 +10,28 @@ const commomStyles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   flexRowOrCentent: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   flexColumnCentent: {
     flexDirection: 'column',
     alignContent: 'center',
-    justifyContent: 'center' 
+    justifyContent: 'center',
   },
   defaultSytle: {
     width: width,
-    height: height
+    height: height,
   },
   defaultBackgroundColor: {
-    backgroundColor: baseColor.defaultColor
+    backgroundColor: baseColor.defaultColor,
   },
   defaultFontStyle: {
     fontSize: baseColor.dfontSize,
     color: baseColor.dfontColor,
-  }
-})
+  },
+});
 
-export { commomStyles }
+export { commomStyles };

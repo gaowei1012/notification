@@ -1,11 +1,5 @@
+export type RootStore = {};
 
-export type RootStore = {
+const rootStore = {};
 
-}
-
-
-const rootStore = {
-
-}
-
-export default rootStore
+export default rootStore;

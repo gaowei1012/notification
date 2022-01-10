@@ -1,6 +1,6 @@
-import { StyleSheet } from 'react-native'
-import { nav_bar_h, status_bar_h } from '../config/statusBarHeight'
-import { px2dp } from '../utils'
+import { StyleSheet } from 'react-native';
+import { nav_bar_h } from '../config/statusBarHeight';
+import { px2dp } from '../utils';
 
 const styles = StyleSheet.create({
   navBar: {
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   },
   navBarTitleContainer: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   navBarButton: {
     alignItems: 'center',
@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { styles }
+export { styles };

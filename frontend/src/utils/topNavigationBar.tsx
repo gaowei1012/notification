@@ -1,21 +1,10 @@
 import React from 'react';
-import {styles} from '../styles/topNavigationBar';
-import {View, Text, StatusBar} from 'react-native';
-import {topNavigationBarType} from '../types/topNavigationBarType';
+import { styles } from '../styles/topNavigationBar';
+import { View, Text, StatusBar } from 'react-native';
+import { topNavigationBarType } from '../types/topNavigationBarType';
 
 const TopNavigationBar: React.FC<topNavigationBarType> = props => {
-  const {
-    style,
-    statusBar,
-    rightButton,
-    titleLayoutStyle,
-    leftButton,
-    hide,
-    titleView,
-    color,
-    fontSize,
-    title,
-  } = props;
+  const { style, statusBar, rightButton, titleLayoutStyle, leftButton, hide, titleView, color, fontSize, title } = props;
   const getButtonElement = (ele: any) => {
     return <View style={styles.navBarButton}>{ele ? ele : null}</View>;
   };
@@ -33,14 +22,12 @@ const TopNavigationBar: React.FC<topNavigationBarType> = props => {
             {titleView ? (
               <>{titleView}</>
             ) : (
-              <Text numberOfLines={1} style={[styles.title, {color, fontSize}]}>
+              <Text numberOfLines={1} style={[styles.title, { color, fontSize }]}>
                 {title}
               </Text>
             )}
           </View>
-          <View style={styles.rightBtnBox}>
-            {getButtonElement(rightButton)}
-          </View>
+          <View style={styles.rightBtnBox}>{getButtonElement(rightButton)}</View>
         </View>
       ) : null}
     </View>
